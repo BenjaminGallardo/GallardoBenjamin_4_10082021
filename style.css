@@ -56,18 +56,14 @@ a:hover {
     font-size: 22px;   /*Ajout d'un texte qui était en image*/
 }
 
-.align {
-    padding: 0em 14em 0em 14em; 
-}
-
 q {
     quotes: '"' '"';
-    font-size: 18px;
+    font-size: 19px;
     color: #575757;
 }
 
 .text-citation {
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .bloc-sm {
