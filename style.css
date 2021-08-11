@@ -28,7 +28,6 @@ a:hover {
 }
 
 .bloc {
-    width: 100%;
     clear: both;
     background: 50% 50% no-repeat;
     padding: 0 50px;
@@ -54,6 +53,10 @@ a:hover {
 
 .text-image {
     font-size: 22px;   /*Ajout d'un texte qui était en image*/
+}
+
+.space {
+    padding: 0em 1em 0em 1em;
 }
 
 q {
@@ -415,6 +418,14 @@ q {
         float: none;
         margin: 10px auto 0;
     }
+}
+
+.nav {
+    list-style-type: none;
+}
+
+.nav > li {
+    padding-right: 2em;
 }
 
 .nav > li > .dropdown a {
