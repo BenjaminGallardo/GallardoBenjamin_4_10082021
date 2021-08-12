@@ -56,7 +56,7 @@ a {
 
 a:active,
 a:hover {
-    outline: 0
+    outline: solid black 2px;
 }
 
 abbr[title] {
@@ -1413,7 +1413,7 @@ a {
 a:focus,
 a:hover {
     color: #23527c;
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 a:focus {
@@ -1435,7 +1435,6 @@ img {
 .img-responsive,
 .thumbnail a>img,
 .thumbnail>img {
-    display: block;
     max-width: 100%;
     height: auto
 }
@@ -2066,7 +2065,7 @@ pre code {
     position: relative;
     min-height: 1px;
     padding-right: 15px;
-    padding-left: 15px
+    padding-left: 15px;
 }
 
 .col-xs-1,
