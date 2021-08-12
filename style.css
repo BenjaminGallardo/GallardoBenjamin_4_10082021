@@ -6,7 +6,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
- 
+
 a,
 button {
     transition: all .3s ease-in-out;
@@ -28,6 +28,7 @@ a:hover {
 }
 
 .bloc {
+    width: 100%;
     clear: both;
     background: 50% 50% no-repeat;
     padding: 0 50px;
@@ -49,24 +50,6 @@ a:hover {
 
 .bloc-md {
     padding: 50px;
-}
-
-.text-image {
-    font-size: 22px;   /*Ajout d'un texte qui était en image*/
-}
-
-.space {
-    padding: 0em 1em 0em 1em;
-}
-
-q {
-    quotes: '"' '"';
-    font-size: 20px;
-    color: #575757;
-}
-
-.text-citation {
-    font-size: 14px;
 }
 
 .bloc-sm {
@@ -289,6 +272,14 @@ q {
     margin-top: 80px;
 }
 
+.text-citation {
+    font-size: 15px;
+}
+
+q {
+    font-size: 20px;
+}
+
 .row-no-gutters {
     margin-right: 0;
     margin-left: 0;
@@ -420,14 +411,6 @@ q {
     }
 }
 
-.nav {
-    list-style-type: none;
-}
-
-.nav > li {
-    padding-right: 2em;
-}
-
 .nav > li > .dropdown a {
     background: none!important;
     display: block;
@@ -502,6 +485,7 @@ button {
 
 .icon-md {
     font-size: 30px!important;
+    margin-bottom: 20px;
 }
 
 .icon-lg {
@@ -575,7 +559,6 @@ a[data-lightbox]:hover::before {
     z-index: 1;
     position: absolute;
     top: 50%;
-    left: 50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
@@ -678,6 +661,10 @@ a {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
+}
+
+.form-group {
+    margin-bottom: 20px;
 }
 
 .container {
@@ -874,13 +861,13 @@ h4 {
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-pixel-ratio: 1.5) {
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -898,6 +885,10 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
+    .bloc {
+        padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right);
+    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -906,6 +897,8 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
+        padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -1036,13 +1029,13 @@ h4 {
     .close-lightbox {
         display: inline-block;
     }
-    .blocsapp-iphone5 {
+    .blocsapp-device-iphone5 {
         background-size: 216px 425px;
         padding-top: 60px;
         width: 216px;
         height: 425px;
     }
-    .blocsapp-iphone5 img {
+    .blocsapp-device-iphone5 img {
         width: 180px;
         height: 320px;
     }

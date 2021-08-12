@@ -1435,8 +1435,9 @@ img {
 .img-responsive,
 .thumbnail a>img,
 .thumbnail>img {
+    display: block;
     max-width: 100%;
-    height: 320px;
+    height: auto
 }
 
 .img-rounded {
@@ -2010,7 +2011,8 @@ pre code {
 }
 
 .row {
-    margin: auto; /*Modification du centre*/
+    margin-right: -15px;
+    margin-left: -15px
 }
 
 .col-lg-1,
@@ -3220,10 +3222,6 @@ input[type=search] {
     input[type=month].input-lg {
         line-height: 46px
     }
-}
-
-.form-group {
-    margin-bottom: 15px
 }
 
 .checkbox,
