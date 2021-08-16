@@ -10,12 +10,16 @@ body {
 a,
 button {
   transition: all 0.3s ease-in-out;
-  outline: none !important;
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
   cursor: pointer;
+  transform: scale(1.05);
+}
+
+.icon-md:hover {
+  transform: scale(1.05);
 }
 
 #page-loading-blocs-notifaction {
@@ -306,6 +310,7 @@ q {
   z-index: 1;
 }
 
+
 .navbar-brand {
   height: auto;
   padding: 3px 15px;
@@ -463,19 +468,20 @@ nav .caret {
   margin: 0 5px 5px 0;
 }
 
+
 .btn.pull-right {
   margin: 0 0 5px 5px;
 }
 
 .btn-d,
-.btn-d:hover,
 .btn-d:focus {
   color: #fff;
   background: rgba(0, 0, 0, 0.3);
 }
 
-button {
-  outline: none !important;
+a:focus {
+  outline: solid black 2px;
+  outline-offset: 0.2em;
 }
 
 .btn-rd {
