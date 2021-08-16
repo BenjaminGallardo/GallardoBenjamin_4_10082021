@@ -290,6 +290,10 @@ q {
   padding: 0em 1em 0em 1em;
 }
 
+.size-text {
+  font-size: 14px;
+}
+
 .row-no-gutters {
   margin-right: 0;
   margin-left: 0;
